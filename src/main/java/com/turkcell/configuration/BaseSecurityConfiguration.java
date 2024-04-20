@@ -14,10 +14,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
-@ComponentScan(basePackages = "com.turkcell.services")
 @RequiredArgsConstructor
-@EnableWebSecurity
-@Import({ BaseSecurityConfiguration.class })
 public class BaseSecurityConfiguration {
     private final PasswordEncoder passwordEncoder;
     private final UserService userService;
